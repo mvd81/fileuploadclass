@@ -25,10 +25,10 @@ if (!empty($_FILES)) {
   $upload = new fileupload($_FILES['upload']);
 
   // Set allowed file extension(s), if not set all extensions are allowed
-  $upload->set_allowed_extensions(array('csv', 'png'));
+  $upload->set_allowed_extensions(array('csv'));
 
   // Set allowed file type(s), if not set all types are allowed
-  $upload->set_allowed_types(array(''));
+  $upload->set_allowed_types(array('application/x-mpb'));
 
   // Set max file size
   $upload->set_max_file_size(2000);
